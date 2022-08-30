@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/two-sum/
 
 #include <iostream>
+#include <cassert>
 #include <vector>
 #include <unordered_map>
 
@@ -31,11 +32,8 @@ vector<int> twoSum(vector<int>& nums, int target) {
 int main()
 {
     vector<int> test = {1,2,3,4,5};
-    vector<int> result = twoSum(test, 3);
-    for(auto i : result) {
-        cout << i;
-    }
-    cout << endl;
+    vector<int> result = {0,1};
+    assert(twoSum(test, 3) == result);
 
     return 0;
 }
